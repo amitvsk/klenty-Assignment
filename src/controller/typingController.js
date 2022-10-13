@@ -54,7 +54,7 @@ const getTypinglist=async (req,res)=>{
         (giveRank(rankArray,list));
       
         // console.log(rest)
-        return res.status(200).send({status:true,msg:rest})
+        return res.status(200).send({status:true,msg:rest[0]})
 
     }catch(err){
         return res.status(500).send({status:false,msg:err.message});
